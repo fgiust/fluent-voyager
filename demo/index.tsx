@@ -53,23 +53,9 @@ export default class Demo extends React.Component {
           <GraphQLVoyager.PanelHeader>
             <div className="voyager-panel">
               <Logo />
-              <Button
-                color="primary"
-                style={{ color: 'white' }}
-                variant="contained"
-                className="choosebutton"
-                onClick={openChangeSchema}
-              >
-                Change Schema
-              </Button>
             </div>
           </GraphQLVoyager.PanelHeader>
         </GraphQLVoyager>
-        <IntrospectionModal
-          open={changeSchemaModalOpen}
-          onClose={closeChangeSchema}
-          onChange={(introspection) => this.setState({ introspection })}
-        />
       </ThemeProvider>
     );
   }
