@@ -1,14 +1,12 @@
 import * as React from 'react';
 import { render } from 'react-dom';
 
-import Button from '@mui/material/Button';
 import { ThemeProvider } from '@mui/material/styles';
 
 import { theme } from '../src/components/MUITheme';
 import { GraphQLVoyager } from '../src';
 import LogoIcon from './icons/logo-small.svg';
 
-import { IntrospectionModal } from './IntrospectionModal';
 import { defaultPreset } from './presets';
 
 import './components.css';
@@ -40,12 +38,7 @@ export default class Demo extends React.Component {
   }
 
   public render() {
-    const { changeSchemaModalOpen, introspection } = this.state;
-
-    const openChangeSchema = () =>
-      this.setState({ changeSchemaModalOpen: true });
-    const closeChangeSchema = () =>
-      this.setState({ changeSchemaModalOpen: false });
+    const { introspection } = this.state;
 
     return (
       <ThemeProvider theme={theme}>
