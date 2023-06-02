@@ -1,5 +1,0 @@
-name: PullRequest
-on: pull_request
-jobs:
-  ci:
-    uses: ./.github/workflows/ci.yml
