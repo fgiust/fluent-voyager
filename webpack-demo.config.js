@@ -21,7 +21,7 @@ module.exports = function (_, { mode }) {
       stats: 'errors-only',
     },
     output: {
-      path: path.resolve(__dirname, 'demo-dist'),
+      path: path.resolve(__dirname, 'docs'),
       filename: '[name].js',
       sourceMapFilename: '[name].[id].map',
     },
